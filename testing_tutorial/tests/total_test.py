@@ -22,6 +22,6 @@ def test_if_not_a_list_is_passed():
     with pytest.raises(TypeError):
         total("Error")
 
-def test_if_a_single_value_is_passed():
-    with pytest.raises(ValueError):
+def test_if_single_value_is_passed():
+    with pytest.raises(TypeError):
         total(5)
